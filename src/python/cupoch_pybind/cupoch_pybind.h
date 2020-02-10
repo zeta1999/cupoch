@@ -21,7 +21,7 @@ template<typename T, typename Alloc> class host_vector;
 namespace pybind11 {
 namespace detail {
 
-template <typename Type, typename Alloc> struct type_caster<thrust::host_vector<Type, Alloc> >
+template <typename Type, typename Alloc> struct type_caster<thrust::host_vector<Type, Alloc>>
     : list_caster<thrust::host_vector<Type, Alloc>, Type> {};
 
 template <typename T, typename Class_>
